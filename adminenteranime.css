@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+*{
+ font-family: 'Charm', cursive;
+    
+}
+body {
+ font-family: 'Charm', cursive;
+    color: #fff;
+    background-color: #010D41;
+    cursor: pointer;
+}
+.title {
+    position: fixed;
+    bottom: 15%;
+    left: 0;
+    text-align: center;
+    width: 100vw;
+    color: #fff;
+    font-size: 11px;
+}
+.container {
+    position: fixed;
+    height: 140vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.graphics {
+    height: 70%;
+    z-index: 0;
+}
+.pin-code {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 25vh;
+    text-align: center;
+    z-index: 6;
+    opacity: 0;
+}
+.pin-code-number,
+.pin-reset {
+    display: inline-block;
+    float: left;
+}
+.pin-code-number {
+    font-size: 3vh;
+    padding: 0.8em 0.8em 0.3em 0.3em;
+    margin: 0.7vh;
+    width: 0.7vh;
+    height: 3.2vh;
+    color: transparent;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+.pin-reset {
+    width: 2.7vh;
+    opacity: 0.1;
+}
+input{
+    background-color: transparent;
+    border: none;
+    width: 1000%;
+}

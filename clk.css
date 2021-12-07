@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ font-family: 'Charm', cursive;
+  
+}
+.clock {
+ font-family: 'Charm', cursive;
+  font-size: 4vmin;
+  height: 100vh;
+  width: 10vh;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hr,
+.min,
+.sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4vmin;
+  grid-row: 1/2;
+  align-items: start;
+}
+.number {
+  user-select: none;
+  width: 8vmin;
+  height: 8vmin;
+  display: grid;
+  place-items: center;
+  color: black;
+  transition: all 500ms 100ms ease;
+  border-radius: 50%;
+}
+.number.pop {
+  color: black;
+  font-weight: bold;
+  transform: scale(1.2);
+  background-color: white;
+  box-shadow: -1vmin -1vmin 2vmin -0.5vmin #f9fbfd, 1vmin 1vmin 2vmin #5d5d5d;
+}
+.strip {
+  transition: transform 500ms ease-in-out;
+  border-radius: 1.333333333333333vmin;
+  background-color: white;
+  box-shadow: -1vmin -1vmin 2vmin -0.5vmin #f9fbfd, 1vmin 1vmin 2vmin grey;
+}
+.clock {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8vmin;
+  height:0vmin;
+  position: relative;
+  padding: 0vmin;
+}
